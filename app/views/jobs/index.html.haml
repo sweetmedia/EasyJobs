@@ -1,0 +1,37 @@
+%h1 Listing jobs
+
+%table
+  %tr
+    %th Company name
+    %th Company website
+    %th Company logo
+    %th Job title
+    %th Job type
+    %th Job category
+    %th Job salary
+    %th Job location
+    %th Job description
+    %th Job apply
+    %th
+    %th
+    %th
+
+  - @jobs.each do |job|
+    %tr
+      %td= job.company_name
+      %td= job.company_website
+      %td= job.company_logo
+      %td= job.job_title
+      %td= job.job_type
+      %td= job.job_category
+      %td= job.job_salary
+      %td= job.job_location
+      %td= job.job_description
+      %td= job.job_apply
+      %td= link_to 'Show', job
+      %td= link_to 'Edit', edit_job_path(job)
+      %td= link_to 'Destroy', job, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Job', new_job_path

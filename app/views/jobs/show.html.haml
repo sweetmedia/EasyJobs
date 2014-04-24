@@ -1,0 +1,36 @@
+%p#notice= notice
+
+%p
+  %b Company name:
+  = @job.company_name
+%p
+  %b Company website:
+  = @job.company_website
+%p
+  %b Company logo:
+  = @job.company_logo
+%p
+  %b Job title:
+  = @job.job_title
+%p
+  %b Job type:
+  = @job.job_type
+%p
+  %b Job category:
+  = @job.job_category
+%p
+  %b Job salary:
+  = @job.job_salary
+%p
+  %b Job location:
+  = @job.job_location
+%p
+  %b Job description:
+  = @job.job_description
+%p
+  %b Job apply:
+  = @job.job_apply
+
+= link_to 'Edit', edit_job_path(@job)
+\|
+= link_to 'Back', jobs_path
