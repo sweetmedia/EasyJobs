@@ -18,7 +18,7 @@ class JobsControllerTest < ActionController::TestCase
 
   test "should create job" do
     assert_difference('Job.count') do
-      post :create, job: { company_logo: @job.company_logo, company_name: @job.company_name, company_website: @job.company_website, job_apply: @job.job_apply, job_category: @job.job_category, job_description: @job.job_description, job_location: @job.job_location, job_salary: @job.job_salary, job_title: @job.job_title, job_type: @job.job_type }
+      post :create, job: { company_logo: @job.company_logo, company_name: @job.company_name, company_website: @job.company_website, job_apply: @job.job_apply, job_category: @job.job_category, job_description: @job.job_description, job_location: @job.job_location, job_salary: @job.job_salary, job_tags: @job.job_tags, job_title: @job.job_title, job_type: @job.job_type }
     end
 
     assert_redirected_to job_path(assigns(:job))
@@ -35,7 +35,7 @@ class JobsControllerTest < ActionController::TestCase
   end
 
   test "should update job" do
-    patch :update, id: @job, job: { company_logo: @job.company_logo, company_name: @job.company_name, company_website: @job.company_website, job_apply: @job.job_apply, job_category: @job.job_category, job_description: @job.job_description, job_location: @job.job_location, job_salary: @job.job_salary, job_title: @job.job_title, job_type: @job.job_type }
+    patch :update, id: @job, job: { company_logo: @job.company_logo, company_name: @job.company_name, company_website: @job.company_website, job_apply: @job.job_apply, job_category: @job.job_category, job_description: @job.job_description, job_location: @job.job_location, job_salary: @job.job_salary, job_tags: @job.job_tags, job_title: @job.job_title, job_type: @job.job_type }
     assert_redirected_to job_path(assigns(:job))
   end
 

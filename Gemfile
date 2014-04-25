@@ -6,6 +6,7 @@ gem 'haml'
 gem 'haml-rails'
 gem 'sass'
 gem 'jquery-rails'
+gem 'turbolinks'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

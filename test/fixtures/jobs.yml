@@ -8,6 +8,7 @@ one:
   job_type: MyString
   job_category: MyString
   job_salary: MyString
+  job_tags: MyString
   job_location: MyString
   job_description: MyText
   job_apply: MyText
@@ -20,6 +21,7 @@ two:
   job_type: MyString
   job_category: MyString
   job_salary: MyString
+  job_tags: MyString
   job_location: MyString
   job_description: MyText
   job_apply: MyText
